@@ -1,0 +1,16 @@
+#!/bin/bash
+
+read -p "Enter the number " number
+
+for i in {1..10}; do
+  echo "$number*1= $((number*i))"
+done
+
+for i in {1..10}; do
+	result=$((number*i))
+	echo "$number X $i = $result"
+done
+
+for ((i=1; i<=number; i++)); do
+  echo "$number*$i= $((number*i))"
+done

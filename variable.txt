@@ -1,0 +1,20 @@
+#!/bin/bash
+name="kunal"
+server="web-01"
+echo "hello $name, you are working on $server"
+
+hostname=$(hostname)
+
+echo "the hostname is $hostname"
+
+echo "home is $HOME"
+echo "user is $USER"
+
+read -p "hello who are you " name
+
+echo "$name"
+
+school=$1
+echo "the school name is $school"
+
+echo $?

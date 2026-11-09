@@ -1,0 +1,29 @@
+#!/bin/bash
+
+read -p "enter the number " number
+
+if [ $number -gt 18 ]; then
+    echo "the person is in adult category"
+else
+   echo "minor"
+fi
+
+
+read -p "enter the name " name
+
+if [ "$name" == "kunal" ]; then
+	echo "enter name is correct"
+else
+	echo "enter name is not correct"
+fi
+
+
+#checking that the file exist or not 
+
+file="/c/Users/KUNAL GOYAL/Downloads/bash_learning/variable.txt"
+
+if [ -f "$file" ]; then
+	echo "the variable file exist there"
+else
+	echo "the variable file is not exist there"
+fi 

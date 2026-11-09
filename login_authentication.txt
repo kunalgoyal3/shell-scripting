@@ -1,0 +1,10 @@
+#!/bin/bash
+
+read -p "enter the username " username 
+read -p "enter the password " password
+
+if [ $username == $password ]; then
+  echo " login successful"
+else 
+  echo "not match"
+fi

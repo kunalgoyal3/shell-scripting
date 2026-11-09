@@ -1,0 +1,25 @@
+#!/bin/bash
+
+fruit=("apple" , "banana", "mango", "orange", "grapes")
+
+echo "the first fruit name is ${fruit[0]}"
+
+echo "all fuit name" 
+
+echo "${fruit[@]}"
+
+echo "printing all fruit using for loop"
+
+for name in "${fruit[@]}";do
+	echo " the fruit name is $name"
+done
+
+
+
+for i in {1..5}; do
+	echo "$i"
+done
+
+
+echo "reverse the array"
+

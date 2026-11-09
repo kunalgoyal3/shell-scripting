@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -p "enter the number" number
+
+if [ $number -ge 0 ]; then
+   echo "number is positive number"
+else
+   echo "number is negative number"
+fi
+
+

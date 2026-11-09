@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -p "enter the file path" filepath
+
+if [ ! -e "$filepath" ]; then
+  echo "path does not exist"
+elif [ -d "$filepath" ]; then
+  echo "this is directory"
+else 
+  echo "this is file"
+fi

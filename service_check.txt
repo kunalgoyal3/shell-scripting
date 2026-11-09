@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -p "enter the service name " service
+
+systemctl status $service > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+  echo "the service is running"
+else 
+  echo "Service is not running"
+fi
